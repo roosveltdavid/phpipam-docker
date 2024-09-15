@@ -1,6 +1,6 @@
 # phpIPAM Docker
 
-Este repositório contém arquivos de configuração para a configuração básica de um container Docker com a aplicação **phpIPAM** localmente. O phpIPAM é uma aplicação de gerenciamento de endereços IP, ideal para gerenciar recursos de numeração e documentação de redes.
+Este repositório contém arquivos de configuração para a configuração básica de um container Docker com a aplicação **phpIPAM** localmente. O phpIPAM é uma aplicação de gerenciamento de endereços IP, ideal para gerenciar recursos de numeração e documentação de redes, muito útil em provedores de internet, empresas e qualquer operação onde se trabalhe com redes. 
 
 ## Recursos
 
@@ -113,7 +113,7 @@ Contribuições são sempre bem-vindas! Se você deseja contribuir, por favor, s
 
 6. **Abra um Pull Request**: Vá para a página do repositório original e abra um novo Pull Request. Selecione sua branch com as alterações e descreva o que você fez.
 
-7. **Aguarde a revisão**: A equipe do projeto revisará seu Pull Request e discutirá possíveis melhorias ou sugestões.
+7. **Aguarde a revisão**: Irei revisar seu Pull Request  assim que possível e as alterações fazendo sentido irei fazer o merge com a Branch master do projeto.
 
 8. **Mantenha-se atualizado**: Certifique-se de manter sua branch atualizada com a branch principal do repositório original para evitar conflitos.
 
