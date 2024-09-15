@@ -63,7 +63,7 @@ Para atualizar o phpIPAM ou o Docker Compose, siga os passos abaixo:
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a Licença MIT.
 
 ---
 
@@ -119,4 +119,4 @@ Contribuições são sempre bem-vindas! Se você deseja contribuir, por favor, s
 
 ---
 
-Agradecemos por contribuir para o projeto! Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato conosco através do [roosveltdavid@gmail.com](mailto:roosveltdavid@gmail.com) ou criar uma [issue](#) no repositório.
+Agradecemos por contribuir para o projeto! Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato conosco através do [roosveltdavid@gmail.com](mailto:roosveltdavid@gmail.com) ou criar uma [issue](https://github.com/roosveltdavid/phpipam-docker/issues) no repositório.
