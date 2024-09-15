@@ -17,7 +17,7 @@ services:
       - phpipam-mariadb
     networks:
       phpipam-network:
-        ipv4_address: 192.168.100.10
+        ipv4_address: 172.21.100.10
 
   phpipam-cron:
     image: phpipam/phpipam-cron:latest
@@ -34,7 +34,7 @@ services:
       - phpipam-mariadb
     networks:
       phpipam-network:
-        ipv4_address: 192.168.100.11
+        ipv4_address: 172.21.100.11
 
   phpipam-mariadb:
     build: .
@@ -48,7 +48,7 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       phpipam-network:
-        ipv4_address: 192.168.100.12
+        ipv4_address: 172.21.100.12
 
 volumes:
   phpipam-db-data:
