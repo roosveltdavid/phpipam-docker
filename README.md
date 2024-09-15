@@ -26,22 +26,21 @@ Antes de começar, você precisa ter o [Docker](https://www.docker.com/get-start
     cd phpipam-docker
     ```
 
-3. Ajuste o arquivo `.env` com as configurações apropriadas para seu ambiente.:
+3. Ajuste o arquivo `.env` com as configurações apropriadas para seu ambiente:
 
     ```bash
     vim .env
     ```
- 
+
 4. Inicie os containers Docker usando o Docker Compose:
 
     ```bash
-
     docker-compose up --build -d
     ```
 
 ## Acessando phpIPAM
 
-Após iniciar os containers, o phpIPAM estará disponível em [http://localhost:8080](http://localhost:8080) ou na URL configurada em seu `.env`. Acesse a interface web para começar a configurar seu gerenciamento de IP.
+Após iniciar os containers, o phpIPAM estará disponível em [http://localhost:8080](http://localhost:8080) ou na URL configurada em seu arquivo `.env`. Acesse a interface web para começar a configurar seu gerenciamento de IP.
 
 ## Configuração Inicial
 
@@ -50,52 +49,54 @@ Após iniciar os containers, o phpIPAM estará disponível em [http://localhost:
 
 ## Configuração
 
-Você pode ajustar as configurações modificando os arquivos `docker-compose.yml` e `.env`. Verifique os arquivos para configurar portas, credenciais e outras opções conforme necessário.
+Você pode ajustar as configurações modificando os arquivos `docker-compose.yml` e `.env`. Verifique esses arquivos para configurar portas, credenciais e outras opções conforme necessário.
 
 ## Atualizações
 
 Para atualizar o phpIPAM ou o Docker Compose, siga os passos abaixo:
 
-```bash
-git pull origin main
-docker-compose down
-docker-compose up --build -d
+    ```bash
+    git pull origin main
+    docker-compose down
+    docker-compose up --build -d
+    ```
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ---
 
 A Licença MIT é uma licença permissiva que é muito simples e de fácil compreensão. Em resumo, você pode fazer o que quiser com o código, desde que inclua o aviso de copyright e a licença nos documentos ou no software. Veja o texto completo da Licença MIT abaixo:
 
-MIT License
+### MIT License
 
 Copyright (c) [2024] [Roosvelt David]
 
 Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para usar o Software sem restrições, incluindo, sem limitação, os direitos de usar, copiar, modificar, fundir, publicar, distribuir, sublicenciar e/ou vender cópias do Software, desde que as seguintes condições sejam atendidas:
 
-A acima nota de copyright e esta permissão devem ser incluídas em todas as cópias ou partes substanciais do Software.
+A nota de copyright acima e esta permissão devem ser incluídas em todas as cópias ou partes substanciais do Software.
 
 O Software é fornecido "no estado em que se encontra", sem garantia de qualquer tipo, expressa ou implícita, incluindo, mas não se limitando às garantias implícitas de comercialização, adequação a um fim específico e não violação. Em nenhum caso os autores ou titulares dos direitos autorais serão responsáveis por qualquer reclamação, dano ou outra responsabilidade, seja em uma ação de contrato, ato ilícito ou de outra forma, resultante de, ou em conexão com o Software ou o uso ou outras negociações no Software.
 
 ---
 
-Se você tiver alguma dúvida sobre a licença, sinta-se à vontade para entrar em contato com [roosveltdavid@gmail.com].
-
+Se você tiver alguma dúvida sobre a licença, sinta-se à vontade para entrar em contato com [roosveltdavid@gmail.com](mailto:roosveltdavid@gmail.com).
 
 ## Contribuições
 
-Contribuições são sempre bem vindas! Se você deseja contribuir, por favor, siga estas diretrizes:
+Contribuições são sempre bem-vindas! Se você deseja contribuir, por favor, siga estas diretrizes:
 
 1. **Fork o repositório**: Clique no botão "Fork" no canto superior direito da página do repositório para criar uma cópia pessoal do repositório em sua conta GitHub.
 
 2. **Clone o repositório**: Clone o repositório forkado para sua máquina local usando o comando:
+
     ```bash
     git clone https://github.com/roosveltdavid/phpipam-docker.git
     ```
 
 3. **Crie uma branch**: Crie uma nova branch para sua mudança usando o comando:
+
     ```bash
     git checkout -b minha-nova-feature
     ```
@@ -103,6 +104,7 @@ Contribuições são sempre bem vindas! Se você deseja contribuir, por favor, s
 4. **Faça as alterações**: Faça suas alterações e adicione uma descrição clara e concisa do que você fez.
 
 5. **Commit e push**: Faça o commit das suas alterações e envie para o seu repositório forkado:
+
     ```bash
     git add .
     git commit -m "Descrição das minhas mudanças"
@@ -117,7 +119,4 @@ Contribuições são sempre bem vindas! Se você deseja contribuir, por favor, s
 
 ---
 
-Agradecemos por contribuir para o projeto! Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato conosco através do [roosveltdavid@gmail.com] ou criar uma [issue](#) no repositório.
-
-
-
+Agradecemos por contribuir para o projeto! Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato conosco através do [roosveltdavid@gmail.com](mailto:roosveltdavid@gmail.com) ou criar uma [issue](#) no repositório.
