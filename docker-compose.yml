@@ -1,0 +1,56 @@
+services:
+  phpipam-web:
+    image: phpipam/phpipam-www:latest
+    ports:
+      - "8080:80"
+    environment:
+      - TZ=America/Sao_Paulo
+      - IPAM_DATABASE_HOST=phpipam-mariadb
+      - IPAM_DATABASE_USER=phpipam
+      - IPAM_DATABASE_PASS=konitiua
+      - IPAM_DATABASE_NAME=phpipam
+    restart: unless-stopped
+    volumes:
+      - phpipam-logo:/phpipam/css/images/logo
+      - phpipam-ca:/usr/local/share/ca-certificates:ro
+    depends_on:
+      - phpipam-mariadb
+    networks:
+      - phpipam-network
+
+  phpipam-cron:
+    image: phpipam/phpipam-cron:latest
+    environment:
+      - TZ=America/Sao_Paulo
+      - IPAM_DATABASE_HOST=phpipam-mariadb
+      - IPAM_DATABASE_USER=phpipam
+      - IPAM_DATABASE_PASS=konitiua
+      - SCAN_INTERVAL=1h
+    restart: unless-stopped
+    volumes:
+      - phpipam-ca:/usr/local/share/ca-certificates:ro
+    depends_on:
+      - phpipam-mariadb
+    networks:
+      - phpipam-network
+
+  phpipam-mariadb:
+    build: .
+    ports:
+      - "3306:3306"
+    environment:
+      - MARIADB_ROOT_PASSWORD=konitiua
+    restart: unless-stopped
+    volumes:
+      - phpipam-db-data:/var/lib/mariadb
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - phpipam-network
+
+volumes:
+  phpipam-db-data:
+  phpipam-logo:
+  phpipam-ca:
+
+networks:
+  phpipam-network:
