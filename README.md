@@ -37,6 +37,13 @@ Antes de começar, você precisa ter o [Docker](https://www.docker.com/get-start
     ```bash
     docker-compose up --build -d
     ```
+5. Após o build para iniciar os conteiners sempre que precisar basta inicializar com os comandos abaixo:
+
+    ```bash
+    docker run -d --name phpipam-cron phpipam/phpipam-cron:latest
+    docker run -d -p 8080:80 --name phpipam-www phpipam/phpipam-www:latest
+    docker run -d -p 3306:3306 --name phpipam-mariadb phpipam-docker-phpipam-mariadb
+    ```
 
 ## Acessando phpIPAM
 
