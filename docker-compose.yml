@@ -7,7 +7,7 @@ services:
       - TZ=America/Sao_Paulo
       - IPAM_DATABASE_HOST=phpipam-mariadb
       - IPAM_DATABASE_USER=phpipam
-      - IPAM_DATABASE_PASS=konitiua
+      - IPAM_DATABASE_PASS=botaqualquercoisa
       - IPAM_DATABASE_NAME=phpipam
     restart: unless-stopped
     volumes:
@@ -24,7 +24,7 @@ services:
       - TZ=America/Sao_Paulo
       - IPAM_DATABASE_HOST=phpipam-mariadb
       - IPAM_DATABASE_USER=phpipam
-      - IPAM_DATABASE_PASS=konitiua
+      - IPAM_DATABASE_PASS=botaqualquercoisa
       - SCAN_INTERVAL=1h
     restart: unless-stopped
     volumes:
@@ -39,7 +39,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      - MARIADB_ROOT_PASSWORD=konitiua
+      - MARIADB_ROOT_PASSWORD=botaqualquercoisa
     restart: unless-stopped
     volumes:
       - phpipam-db-data:/var/lib/mariadb
